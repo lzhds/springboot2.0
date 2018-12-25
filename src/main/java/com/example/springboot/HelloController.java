@@ -12,6 +12,7 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(Model model) {
+        String version="另一个版本的spring";
         model.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
         return "hello";
     }
